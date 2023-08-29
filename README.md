@@ -5,7 +5,25 @@ tool that helps João to solve his problem in a simple way.
 
 ### Solution
 Implemented a RESTful API Laravel with docker for a task management application (to-do list).
+### Features
 
+- [x] Task:
+   - [x] Create
+   - [x] Update
+   - [x] Read
+   - [x] Delete
+   - [x] Restore
+- [x] User:
+   - [x] Create
+   - [x] Update
+   - [x] Read
+   - [x] Delete
+- [x] Auth:
+   - [x] Login
+   - [x] Register
+   - [x] Logout
+   - [x] Validate Token
+    
 ## acess aplication in url 💻: 
 <a href="http://137.184.125.187:8989/api/tasks">acess project production</a>
 ## Presentation project: 
