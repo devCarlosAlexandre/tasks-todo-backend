@@ -89,7 +89,12 @@ Install depency the project
 composer install
 ```
 
-Generete key
+Generate migrations
+```sh
+php artisan migrate
+```
+
+Generate key
 ```sh
 php artisan key:generate
 ```
