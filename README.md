@@ -8,7 +8,7 @@ tool that helps João to solve his problem in a simple way.
 ### Solution
 Implemented a RESTful API Laravel with docker for a task management application (to-do list).
 ### Acess aplication in url 💻: 
-- <a href="http://137.184.125.187:8989/api/tasks"> --> Acess project production <-- </a> <br>
+- <a href="http://137.184.125.187:8989/"> --> Acess project production <-- </a> <br>
 - <a href="http://137.184.125.187:8989/request-docs"> --> Documentation <-- </a>
 ### Features
 
