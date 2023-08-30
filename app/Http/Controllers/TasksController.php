@@ -51,9 +51,10 @@ class TasksController extends Controller
             $filesUpload = [];
             foreach ($files as $file) {
                 $path = $file->store('files', 'public');
-                $filesUpload[] =   ["path" => $path, "user_id" => intval($task->user_id)];
+                $task->attachments()->create(["path" => $path, "user_id" => intval($task->user_id)]);
+                // $filesUpload[] =   ["path" => $path, "user_id" => intval($task->user_id)];
             }
-            $task->attachments()->createMany($filesUpload);
+            // $task->attachments()->createMany($filesUpload);
         }
         $task->load('attachments');
 

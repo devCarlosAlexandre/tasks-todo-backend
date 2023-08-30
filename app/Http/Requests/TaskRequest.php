@@ -27,9 +27,9 @@ class TaskRequest extends FormRequest
             'title' => 'required|string|max:255',
             'description' => 'required|string|min:3',
             'user_id' => 'required|exists:users,id|numeric',
-            'attachment' => 'sometimes|file|max:5000|mimes:jpeg,png,docx,xlsx,pdf',
-            'status' => 'sometimes|nullable',
-            'date_done' =>  'sometimes|nullable',
+            'attachments[]' => 'sometimes|file|max:5000|mimes:jpeg,png,docx,xlsx,pdf',
+            'status' => 'sometimes',
+            'date_done' =>  'sometimes',
         ];
     }
 

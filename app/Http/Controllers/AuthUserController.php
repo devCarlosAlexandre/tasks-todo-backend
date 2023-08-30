@@ -85,6 +85,9 @@ class AuthUserController extends Controller
     public function show(string $id)
     {
         $user = $this->user->find($id);
+        if (!$user) {
+            return response()->json(["error" => '404 Not Found'], 404);
+        }
         return response()->json([new UserResource($user)], 200);
     }
 

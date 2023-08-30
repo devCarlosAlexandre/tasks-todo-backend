@@ -355,6 +355,15 @@
                 0 => 'v10.20.0',
             ),
         ),
+        'kitloong/laravel-app-logger' => array(
+            'pretty_version' => 'v1.2.1',
+            'version' => '1.2.1.0',
+            'reference' => '9f62604dacc1f185ae76ddc5d2488d030792f639',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../kitloong/laravel-app-logger',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -776,6 +785,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'rakutentech/laravel-request-docs' => array(
+            'pretty_version' => 'v2.22',
+            'version' => '2.22.0.0',
+            'reference' => '3449b5eb89c175fe1237a0b75808c3bbcc44d292',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rakutentech/laravel-request-docs',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'ralouphie/getallheaders' => array(
             'pretty_version' => '3.0.3',
             'version' => '3.0.3.0',
@@ -971,6 +989,15 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'spatie/laravel-http-logger' => array(
+            'pretty_version' => '1.10.2',
+            'version' => '1.10.2.0',
+            'reference' => '28b10af8e17baeb114bdc9385b2badf363378c08',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-http-logger',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'spatie/laravel-ignition' => array(
             'pretty_version' => '2.3.0',
             'version' => '2.3.0.0',
@@ -979,6 +1006,15 @@
             'install_path' => __DIR__ . '/../spatie/laravel-ignition',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'spatie/laravel-package-tools' => array(
+            'pretty_version' => '1.16.1',
+            'version' => '1.16.1.0',
+            'reference' => 'cc7c991555a37f9fa6b814aa03af73f88026a83d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-package-tools',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'symfony/console' => array(
             'pretty_version' => 'v6.3.2',

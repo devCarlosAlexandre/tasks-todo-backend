@@ -28,7 +28,7 @@ class TaskUpdateRequest extends FormRequest
             'title' => 'sometimes|string|max:255',
             'description' => 'sometimes|string|min:3',
             'user_id' => 'sometimes|exists:users,id|numeric',
-            'attachment' => 'sometimes|file|max:5000|mimes:jpeg,png,docx,xlsx',
+            'attachments[]' => 'sometimes|file|max:5000|mimes:jpeg,png,docx,xlsx',
             'status' => 'sometimes|nullable',
             'date_done' =>  'sometimes|nullable',
         ];
