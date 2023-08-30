@@ -1,79 +1,98 @@
+# Api John Task List 👽
+### Story
+João is tired of forgetting his tasks that he need to do daily. Your goal is to create a
+tool that helps João to solve his problem in a simple way.
 
-# Setup Docker Para Projetos Laravel (8, 9 ou 10)
-[Assine a Academy, e Seja VIP!](https://academy.especializati.com.br)
+### Solution
+Implemented a RESTful API Laravel with docker for a task management application (to-do list).
+### Features
 
-### Passo a passo
-Clone Repositório
-```sh
-git clone https://github.com/especializati/setup-docker-laravel.git
+- [x] Task:
+   - [x] Create
+   - [x] Update
+   - [x] Read
+   - [x] Delete
+   - [x] Restore
+- [x] User:
+   - [x] Create
+   - [x] Update
+   - [x] Read
+   - [x] Delete
+- [x] Auth:
+   - [x] Login
+   - [x] Register
+   - [x] Logout
+   - [x] Validate Token
+    
+## acess aplication in url 💻: 
+<a href="http://137.184.125.187:8989/api/tasks">acess project production</a>
+## Presentation project: 
+
+## Technologies utilized✨🚀: 
+
+<img align="" alt="devCarlosAlexandre-Flutter" height="250"  src="https://github.com/devCarlosAlexandre/tasks-todo-backend/assets/63679873/81c464bf-9296-4401-a74d-d8c1bb1060e8">
+<img align="" alt="devCarlosAlexandre-Flutter" height="250"   src="https://github.com/devCarlosAlexandre/tasks-todo-backend/assets/63679873/7305e130-78e2-4644-8e4a-e648b7dc4fe6">
+
+
+# ER diagram 📃
+``` mermaid
+erDiagram
+    USER {
+        int id
+        string nome
+        string email
+        string password
+        string token
+        date created_at
+        date updated_at
+    }
+    
+    TASK {
+        int id
+        int user_id
+        string title
+        string description
+        enum status
+        date date_done
+        bolean active
+        date created_at
+        date updated_at
+    }
+
+    ATTACHMENTS{
+    int id
+    string path
+    int task_id
+    int user_id
+    date created_at
+    date updated_at
+    }
+    
+    USER ||--o{ ATTACHMENTS : "have many"
+    TASK ||--o{ ATTACHMENTS : "have many"
+    USER ||--o{ TASK : "have many"
 ```
 
-Clone os Arquivos do Laravel
-```sh
-git clone https://github.com/laravel/laravel.git app-laravel
-```
-
-
-Copie os arquivos docker-compose.yml, Dockerfile e o diretório docker/ para o seu projeto
-```sh
-cp -rf setup-docker-laravel/* app-laravel/
-```
-```sh
-cd app-laravel/
-```
-
-
-Crie o Arquivo .env
-```sh
-cp .env.example .env
-```
-
-
-Atualize as variáveis de ambiente do arquivo .env
-```dosini
-APP_NAME="Especializa Ti"
-APP_URL=http://localhost:8989
-
-DB_CONNECTION=mysql
-DB_HOST=db
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=root
-
-CACHE_DRIVER=redis
-QUEUE_CONNECTION=redis
-SESSION_DRIVER=redis
-
-REDIS_HOST=redis
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-```
-
-
-Suba os containers do projeto
+## Steps run project wih docker🚢: 
+Upload the project containers
 ```sh
 docker-compose up -d
 ```
-
-
-Acessar o container
+Access the container
 ```sh
 docker-compose exec app bash
 ```
-
-
-Instalar as dependências do projeto
+Install depency the project
 ```sh
+
 composer install
 ```
 
-
-Gerar a key do projeto Laravel
+Generete key
 ```sh
 php artisan key:generate
 ```
 
+### Author
+---
 
-Acessar o projeto
-[http://localhost:8989](http://localhost:8989)
