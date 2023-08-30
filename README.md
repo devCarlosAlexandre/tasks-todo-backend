@@ -5,6 +5,9 @@ tool that helps João to solve his problem in a simple way.
 
 ### Solution
 Implemented a RESTful API Laravel with docker for a task management application (to-do list).
+### Acess aplication in url 💻: 
+- <a href="http://137.184.125.187:8989/api/tasks"> --> Acess project production <-- </a> <br>
+- <a href="http://137.184.125.187:8989/request-docs"> --> Documentation <-- </a>
 ### Features
 
 - [x] Task:
@@ -24,8 +27,6 @@ Implemented a RESTful API Laravel with docker for a task management application 
    - [x] Logout
    - [x] Validate Token
     
-## acess aplication in url 💻: 
-<a href="http://137.184.125.187:8989/api/tasks">acess project production</a>
 ## Presentation project: 
 
 ## Technologies utilized✨🚀: 
