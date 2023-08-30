@@ -28,14 +28,12 @@ Implemented a RESTful API Laravel with docker for a task management application 
    - [x] Register
    - [x] Logout
    - [x] Validate Token
-    
-## Presentation project: 
+
 
 ## Technologies utilized✨🚀: 
 
 <img align="" alt="devCarlosAlexandre-Flutter" height="250"  src="https://github.com/devCarlosAlexandre/tasks-todo-backend/assets/63679873/81c464bf-9296-4401-a74d-d8c1bb1060e8">
 <img align="" alt="devCarlosAlexandre-Flutter" height="250"   src="https://github.com/devCarlosAlexandre/tasks-todo-backend/assets/63679873/7305e130-78e2-4644-8e4a-e648b7dc4fe6">
-
 
 # ER diagram 📃
 ``` mermaid
@@ -96,6 +94,4 @@ Generete key
 php artisan key:generate
 ```
 
-### Author
----
 
